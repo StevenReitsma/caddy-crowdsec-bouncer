@@ -10,8 +10,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	_ "github.com/hslatman/caddy-crowdsec-bouncer/http" // prevent module warning logs
-	"github.com/hslatman/caddy-crowdsec-bouncer/internal/testutils"
+	_ "github.com/StevenReitsma/caddy-crowdsec-bouncer/http" // prevent module warning logs
+	"github.com/StevenReitsma/caddy-crowdsec-bouncer/internal/testutils"
 )
 
 func TestLiveBouncer(t *testing.T) {

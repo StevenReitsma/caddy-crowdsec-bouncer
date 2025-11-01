@@ -335,7 +335,7 @@ func TestModuleLogsLowDockerProxyEventThrottleInterval(t *testing.T) {
 		require.NoError(t, err)
 
 		require.Equal(t, 1, logs.Len())
-		assert.Equal(t, "using docker_proxy module with a low event throttle interval (<2s) can result in errors; see https://github.com/hslatman/caddy-crowdsec-bouncer/issues/61", logs.All()[0].Message)
+		assert.Equal(t, "using docker_proxy module with a low event throttle interval (<2s) can result in errors; see https://github.com/StevenReitsma/caddy-crowdsec-bouncer/issues/61", logs.All()[0].Message)
 	})
 
 	t.Run("warn-not-set", func(t *testing.T) {
@@ -348,7 +348,7 @@ func TestModuleLogsLowDockerProxyEventThrottleInterval(t *testing.T) {
 		require.NoError(t, err)
 
 		require.Equal(t, 1, logs.Len())
-		assert.Equal(t, "using docker_proxy module with a low event throttle interval (<2s) can result in errors; see https://github.com/hslatman/caddy-crowdsec-bouncer/issues/61", logs.All()[0].Message)
+		assert.Equal(t, "using docker_proxy module with a low event throttle interval (<2s) can result in errors; see https://github.com/StevenReitsma/caddy-crowdsec-bouncer/issues/61", logs.All()[0].Message)
 	})
 
 	t.Run("warn-invalid-duration", func(t *testing.T) {
@@ -363,6 +363,6 @@ func TestModuleLogsLowDockerProxyEventThrottleInterval(t *testing.T) {
 		require.NoError(t, err)
 
 		require.Equal(t, 1, logs.Len())
-		assert.Equal(t, "using docker_proxy module with a low event throttle interval (<2s) can result in errors; see https://github.com/hslatman/caddy-crowdsec-bouncer/issues/61", logs.All()[0].Message)
+		assert.Equal(t, "using docker_proxy module with a low event throttle interval (<2s) can result in errors; see https://github.com/StevenReitsma/caddy-crowdsec-bouncer/issues/61", logs.All()[0].Message)
 	})
 }

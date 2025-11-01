@@ -15,7 +15,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/hslatman/caddy-crowdsec-bouncer/internal/adminapi"
+	"github.com/StevenReitsma/caddy-crowdsec-bouncer/internal/adminapi"
 )
 
 func TestAdminAPIRoutes(t *testing.T) {

@@ -24,7 +24,7 @@ import (
 	l4 "github.com/mholt/caddy-l4/layer4"
 	"go.uber.org/zap"
 
-	"github.com/hslatman/caddy-crowdsec-bouncer/crowdsec"
+	"github.com/StevenReitsma/caddy-crowdsec-bouncer/crowdsec"
 )
 
 func init() {

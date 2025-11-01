@@ -26,9 +26,9 @@ import (
 	"github.com/caddyserver/caddy/v2/modules/caddyhttp"
 	"go.uber.org/zap"
 
-	_ "github.com/hslatman/caddy-crowdsec-bouncer/appsec" // always include AppSec module when HTTP is added
-	"github.com/hslatman/caddy-crowdsec-bouncer/crowdsec"
-	"github.com/hslatman/caddy-crowdsec-bouncer/internal/httputils"
+	_ "github.com/StevenReitsma/caddy-crowdsec-bouncer/appsec" // always include AppSec module when HTTP is added
+	"github.com/StevenReitsma/caddy-crowdsec-bouncer/crowdsec"
+	"github.com/StevenReitsma/caddy-crowdsec-bouncer/internal/httputils"
 )
 
 func init() {

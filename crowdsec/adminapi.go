@@ -13,7 +13,7 @@ import (
 	"go.uber.org/zap"
 	"golang.org/x/sync/singleflight"
 
-	"github.com/hslatman/caddy-crowdsec-bouncer/internal/adminapi"
+	"github.com/StevenReitsma/caddy-crowdsec-bouncer/internal/adminapi"
 )
 
 func init() {

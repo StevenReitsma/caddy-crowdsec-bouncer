@@ -26,9 +26,9 @@ import (
 	"github.com/caddyserver/caddy/v2/modules/caddyhttp"
 	"go.uber.org/zap"
 
-	"github.com/hslatman/caddy-crowdsec-bouncer/crowdsec"
-	"github.com/hslatman/caddy-crowdsec-bouncer/internal/bouncer"
-	"github.com/hslatman/caddy-crowdsec-bouncer/internal/httputils"
+	"github.com/StevenReitsma/caddy-crowdsec-bouncer/crowdsec"
+	"github.com/StevenReitsma/caddy-crowdsec-bouncer/internal/bouncer"
+	"github.com/StevenReitsma/caddy-crowdsec-bouncer/internal/httputils"
 )
 
 func init() {

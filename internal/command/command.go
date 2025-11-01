@@ -10,8 +10,8 @@ import (
 	caddycmd "github.com/caddyserver/caddy/v2/cmd"
 	"github.com/spf13/cobra"
 
-	"github.com/hslatman/caddy-crowdsec-bouncer/internal/adminapi"
-	"github.com/hslatman/caddy-crowdsec-bouncer/internal/version"
+	"github.com/StevenReitsma/caddy-crowdsec-bouncer/internal/adminapi"
+	"github.com/StevenReitsma/caddy-crowdsec-bouncer/internal/version"
 )
 
 func Register() {

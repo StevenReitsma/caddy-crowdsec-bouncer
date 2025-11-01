@@ -29,7 +29,7 @@ import (
 	csbouncer "github.com/crowdsecurity/go-cs-bouncer"
 	"go.uber.org/zap"
 
-	"github.com/hslatman/caddy-crowdsec-bouncer/internal/version"
+	"github.com/StevenReitsma/caddy-crowdsec-bouncer/internal/version"
 )
 
 const (
@@ -142,7 +142,7 @@ func (b *Bouncer) Init() (err error) {
 	// TODO: make metrics gathering/integration optional? I.e. if the metrics
 	// interval is configured to be 0 or smaller, don't start the metrics
 	// provider? Separate setting for gathering metrics vs. pushing to LAPI?
-	metricsInterval := 0 * time.Minute // 1 * time.Minute
+	metricsInterval := 1 * time.Minute
 
 	// conditionally initialize the CrowdSec live bouncer
 	if !b.useStreamingBouncer {

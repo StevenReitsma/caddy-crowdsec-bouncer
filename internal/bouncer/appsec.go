@@ -13,7 +13,7 @@ import (
 	"github.com/oxtoacart/bpool"
 	"go.uber.org/zap"
 
-	"github.com/hslatman/caddy-crowdsec-bouncer/internal/httputils"
+	"github.com/StevenReitsma/caddy-crowdsec-bouncer/internal/httputils"
 )
 
 type appsec struct {

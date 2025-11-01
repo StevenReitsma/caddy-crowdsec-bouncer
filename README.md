@@ -35,13 +35,13 @@ Get the module
 
 ```bash
 # get the CrowdSec Bouncer HTTP handler
-go get github.com/hslatman/caddy-crowdsec-bouncer/http
+go get github.com/StevenReitsma/caddy-crowdsec-bouncer/http
 
 # get the CrowdSec layer4 connection matcher (only required if you need support for TCP/UDP level blocking)
-go get github.com/hslatman/caddy-crowdsec-bouncer/layer4
+go get github.com/StevenReitsma/caddy-crowdsec-bouncer/layer4
 
 # get the AppSec HTTP handler (only required if you want CrowdSec AppSec support)
-go get github.com/hslatman/caddy-crowdsec-bouncer/appsec
+go get github.com/StevenReitsma/caddy-crowdsec-bouncer/appsec
 ```
 
 Create a (custom) Caddy server (or use *xcaddy*)
@@ -53,11 +53,11 @@ import (
   cmd "github.com/caddyserver/caddy/v2/cmd"
   _ "github.com/caddyserver/caddy/v2/modules/standard"
   // import the bouncer HTTP handler
-  _ "github.com/hslatman/caddy-crowdsec-bouncer/http"
+  _ "github.com/StevenReitsma/caddy-crowdsec-bouncer/http"
   // import the layer4 matcher (in case you want to block connections to layer4 servers using CrowdSec)
-  _ "github.com/hslatman/caddy-crowdsec-bouncer/layer4"
+  _ "github.com/StevenReitsma/caddy-crowdsec-bouncer/layer4"
   // import the appsec HTTP handler (in case you want to block requests using the CrowdSec AppSec component)
-  _ "github.com/hslatman/caddy-crowdsec-bouncer/appsec"
+  _ "github.com/StevenReitsma/caddy-crowdsec-bouncer/appsec"
 )
 
 func main() {

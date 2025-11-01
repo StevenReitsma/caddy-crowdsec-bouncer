@@ -13,7 +13,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/zap/zaptest"
 
-	"github.com/hslatman/caddy-crowdsec-bouncer/internal/httputils"
+	"github.com/StevenReitsma/caddy-crowdsec-bouncer/internal/httputils"
 )
 
 func newCaddyVarsContext() (ctx context.Context) {
