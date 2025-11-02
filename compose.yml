@@ -1,10 +1,13 @@
 services:
   crowdsec:
     image: crowdsecurity/crowdsec
+    environment:
+      COLLECTIONS: "crowdsecurity/caddy crowdsecurity/http-cve crowdsecurity/whitelist-good-actors crowdsecurity/appsec-virtual-patching crowdsecurity/appsec-generic-rules"
     ports:
       - "8080:8080"
     volumes:
       - logs:/var/log/nginx/
+      - crowdsec-data:/var/lib/crowdsec/data/
 
   caddy:
     build:
@@ -18,8 +21,12 @@ services:
       - caddy-config:/config
       - logs:/var/log/caddy
       - ./docker/config.json:/etc/caddy/config.json
+    environment:
+      LEVEL_DEBUG: "true"
+      DEBUG: "true"
 
 volumes:
   caddy-data:
   caddy-config:
   logs:
+  crowdsec-data:
